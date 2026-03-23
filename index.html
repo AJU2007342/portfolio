@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <style>
+    input,
+    textarea {
+      width: 300px;
+      padding: 12px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 229, 255, 0.5);
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      color: white;
+    }
+
+    ::placeholder {
+      color: #00E5FF;
+      opacity: 0.8;
+    }
+
+    button {
+      padding: 12px 30px;
+      background: #00E5FF;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="nav">
+    <div class="left-name">
+      <a href="#hero" style="text-decoration: none;"><span class="lname1">Ajutesh</span>
+        <span class="lname2">Boddeti</span></a>
+    </div>
+
+    <div class="opts">
+      <a href="#About">About</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Contact">Contact</a>
+    </div>
+  </div>
+
+  <section id="hero" class="hero">
+    <h1>//Hello World</h1>
+    <h2 class="name1">Ajutesh</h2>
+    <h2 class="name2">Boddeti</h2>
+    <p class="subtitle">Computer Science Student | Aspiring Web Developer</p>
+    <a href="#About" class="scroll-arrow">↓</a>
+  </section>
+
+  <section id="About" class="Abt">
+    <h2 style="color: #C792EA;font-size: 50px;"><img src="srch.png" style="height: 40px;width: 40px;"> Who am I??</h2>
+    <div
+      style="display:flex; align-items:center; justify-content:center; gap:50px; padding:40px;backdrop-filter: blur(10px);border-radius: 120px;box-shadow:0 0 20px #C792EA;">
+
+      <img src="aj1.png" style="width:220px; border-radius: 120px; box-shadow:0 0 20px #00E5FF;">
+
+      <p style="color:#00E5FF; font-size:18px; width:500px; font-size: 25px;">
+        I am <b>Ajutesh Boddeti</b>, a <b>Computer Science student</b> passionate about
+        <b>web development</b> and <b>programming</b>. I enjoy building clean and modern
+        websites and continuously learning new technologies.
+      </p>
+
+    </div>
+  </section>
+
+  <section id="Skills" class="Skl">
+    <h2 style="color: #C792EA;font-size: 50px;">My Skills</h2>
+    <div style="display:flex; justify-content:center; gap:40px; margin-top:60px;">
+
+      <div style="padding:30px; width: 250px; text-align:center;
+                background: rgba(255,255,255,0.05);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(0,229,255,0.3);
+                border-radius: 10px;
+                color:#00E5FF;
+                font-size:25px;">
+        HTML5
+        <p>To create the structure and content of web pages.</p>
+      </div>
+
+      <div style="padding:30px; width: 250px; text-align:center;
+                background: rgba(255,255,255,0.05);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(0,229,255,0.3);
+                border-radius: 10px;
+                color:#00E5FF;
+                font-size:25px;">
+        CSS
+        <p>To style web pages, including colors, layouts, fonts, spacing, and animations.</p>
+      </div>
+
+      <div style="padding:30px; width: 250px; text-align:center;
+                background: rgba(255,255,255,0.05);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(0,229,255,0.3);
+                border-radius: 10px;
+                color:#00E5FF;
+                font-size:25px;">
+        Python
+        <p>Used for software development, automation, data analysis, and web development.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Projects" class="Pro">
+    <h2 style="color: #C792EA;font-size: 50px;"> My Projects</h2>
+    <div style="padding:30px; width: 400px; text-align:center;
+                background: rgba(255,255,255,0.05);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(0,229,255,0.3);
+                border-radius: 10px;
+                color:#00E5FF;
+                font-size:25px;margin-left: 460px;">
+      Portfolio Page
+      <p>Built a personal portfolio website to present my skills, projects, and background. Implemented a modern UI with
+        dark theme, fixed navigation bar, smooth scrolling, and responsive sections using HTML and CSS.</p>
+    </div>
+  </section>
+
+
+  <section id="Contact" class="Con">
+
+    <div style="
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+">
+      <h2 style="color: #C792EA;font-size: 50px;">Contact Me</h2>
+      <form style="margin-top:40px;">
+
+        <input type="text" placeholder="Your Name" required
+          style="width:300px; padding:12px; margin:10px; border-radius:5px; border:none;">
+
+        <br>
+
+        <input type="email" placeholder="Your Email" required
+          style="width:300px; padding:12px; margin:10px; border-radius:5px; border:none;">
+
+        <br>
+
+        <textarea placeholder="Your Message" required
+          style="width:300px; height:120px; padding:12px; margin:10px; border-radius:5px; border:none;"></textarea>
+
+        <br>
+
+        <button type="submit"
+          style="padding:12px 30px; background:#00E5FF; border:none; border-radius:5px; font-size:16px;">
+          Send Message
+        </button>
+
+      </form>
+    </div>
+  </section>
+  <footer style="
+    background: rgba(0,0,0,0.9);
+    border-top: 1px solid rgba(0,229,255,0.3);
+    padding: 30px;
+    text-align: center;
+">
+
+    <h3 style="color:#00E5FF;">Ajutesh Boddeti</h3>
+
+    <div style="margin:5px;">
+      <a href="https://github.com/AJU2007342" style="color:#00E5FF; margin:10px;text-decoration: none;">GitHub</a>
+      <a href="https://www.linkedin.com/in/boddeti-ajutesh-122315372/"
+        style="color:#00E5FF; margin:10px;text-decoration: none;">LinkedIn</a>
+      <a href="https://www.instagram.com/itsajutesh/"
+        style="color:#00E5FF; margin:10px;text-decoration: none;">Instagram</a>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdDxHWndVnnxnpDzKcgBgQHhsckMQgCqbkLmHkhSXGMZjdkLrjHNVbjNJZHRZRCSFMPcDTQ"
+        style="color:#00E5FF; margin:10px;text-decoration: none;">Email</a>
+    </div>
+
+    <p style="color:gray;">
+      © 2026 Ajutesh Boddeti. All Rights Reserved.
+    </p>
+
+    <a href="#top" style="color:#C792EA;text-decoration: none;">Back to Top ↑</a>
+
+  </footer>
+
+</body>
+
+</html>
