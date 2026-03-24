@@ -8,36 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-  <style>
-    input,
-    textarea {
-      width: 300px;
-      padding: 12px;
-      margin: 10px;
-      border-radius: 5px;
-      border: 1px solid rgba(0, 229, 255, 0.5);
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      color: white;
-    }
-
-    ::placeholder {
-      color: #00E5FF;
-      opacity: 0.8;
-    }
-
-    button {
-      padding: 12px 30px;
-      background: #00E5FF;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-  </style>
 </head>
 
 <body>
-
   <div class="nav">
     <div class="left-name">
       <a href="#hero" style="text-decoration: none;"><span class="lname1">Ajutesh</span>
@@ -45,21 +18,22 @@
     </div>
 
     <div class="opts">
-      <a href="#About">About</a>
-      <a href="#Skills">Skills</a>
-      <a href="#Projects">Projects</a>
-      <a href="#Contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 
   <section id="hero" class="hero">
-    <h1>//Hello World</h1>
-    <h2 class="name1">Ajutesh</h2>
-    <h2 class="name2">Boddeti</h2>
-    <p class="subtitle">Computer Science Student | Aspiring Web Developer</p>
-    <a href="#About" class="scroll-arrow">↓</a>
-    <a href="Ajutesh_Boddeti_Resume.pdf" download>
-    <button style="
+    <div style="margin-top: 100px;">
+      <h1>//Hello World</h1>
+      <h2 class="name1">Ajutesh</h2>
+      <h2 class="name2">Boddeti</h2>
+      <p class="subtitle">Computer Science Student | Aspiring Web Developer</p>
+      <a href="#about" class="scroll-arrow">↓</a>
+      <a href="Ajutesh_Boddeti_Resume.pdf" download>
+        <button style="
         padding:12px 25px;
         background: transparent;
         border: 2px solid #00E5FF;
@@ -69,28 +43,29 @@
         margin-top: 20px;
         margin-left: 570px;
         cursor: pointer;">
-        Download Resume
-    </button>
-</a>
+          Download Resume
+        </button>
+      </a>
+    </div>
   </section>
 
-  <section id="About" class="Abt">
-    <h2 style="color: #C792EA;font-size: 50px;"><img src="srch.png" style="height: 40px;width: 40px;"> Who am I??</h2>
+  <section id="about" class="Abt">
+    <h2 style="color: #C792EA;font-size: 50px;"><img src="srch.png" style="height: 30px;width: 30px;"> Who am I??</h2>
     <div
-      style="display:flex; align-items:center; justify-content:center; gap:50px; padding:40px;backdrop-filter: blur(10px);border-radius: 120px;box-shadow:0 0 20px #C792EA;">
+      style="display:flex; align-items:center; justify-content:center; gap:50px; padding:30px;backdrop-filter: blur(10px);border-radius: 120px;box-shadow:0 0 20px #C792EA;">
 
       <img src="aj1.png" style="width:220px; border-radius: 120px; box-shadow:0 0 20px #00E5FF;">
 
-      <p style="color:#00E5FF; font-size:18px; width:500px; font-size: 25px;">
+      <p style="color:#CCCCCC; font-size:18px; width:500px; font-size: 25px;">
         I am <b>Ajutesh Boddeti</b>, a <b>Computer Science student</b> passionate about
-        <b>web development</b> and <b>programming</b>. I enjoy building clean and modern
-        websites and continuously learning new technologies.
+        <b>web development</b> and <b>programming</b>. I aspire to become a Web Developer.
+        Currently learning the roots of Web Development to win in Hackathons and get Internships.
       </p>
-      
+
     </div>
-      <br>
-      <br>
-      <div style="padding:30px; width: 1200px; text-align:center;
+    <br>
+    <br>
+    <div style="padding:30px; width: 1200px; text-align:center;
                 background: rgba(255,255,255,0.05);
                 backdrop-filter: blur(10px);
                 border: 1px solid rgba(0,229,255,0.3);
@@ -98,14 +73,17 @@
                 margin-left:50px;
                 color:#00E5FF;
                 font-size:25px;">
-        <b>Tools I Use</b>
-        <p><p>HTML5 • CSS3 • JavaScript • GitHub • VS Code • Responsive Design • Flexbox</p></p>
-      </div>
+      <b>Tools I Use</b>
+      <p>
+      <p style="color: #CCCCCC;">HTML5 • CSS3 • JavaScript • GitHub • VS Code • Responsive Design • Flexbox</p>
+      </p>
+    </div>
+    <a href="#skills" class="scroll-arrow">↓</a>
   </section>
 
-  <section id="Skills" class="Skl">
+  <section id="skills" class="Skl">
     <h2 style="color: #C792EA;font-size: 50px;">My Skills</h2>
-    <div style="display:flex; justify-content:center; gap:40px; margin-top:60px;">
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:60px;">
 
       <div style="padding:30px; width: 250px; text-align:center;
                 background: rgba(255,255,255,0.05);
@@ -113,9 +91,11 @@
                 border: 1px solid rgba(0,229,255,0.3);
                 border-radius: 10px;
                 color:#00E5FF;
-                font-size:25px;">
+                font-size:25px;
+                color: #CCCCCC;">
+        <img src="html.png" alt="" style="height: 70px;width: 70px;"><br>
         HTML5
-        <p>To create the structure and content of web pages.</p>
+
       </div>
 
       <div style="padding:30px; width: 250px; text-align:center;
@@ -124,9 +104,10 @@
                 border: 1px solid rgba(0,229,255,0.3);
                 border-radius: 10px;
                 color:#00E5FF;
-                font-size:25px;">
+                font-size:25px;
+                color: #CCCCCC;">
+        <img src="css.png" alt="" style="height: 70px;width: 70px;"><br>
         CSS
-        <p>To style web pages, including colors, layouts, fonts, spacing, and animations.</p>
       </div>
 
       <div style="padding:30px; width: 250px; text-align:center;
@@ -135,42 +116,97 @@
                 border: 1px solid rgba(0,229,255,0.3);
                 border-radius: 10px;
                 color:#00E5FF;
-                font-size:25px;">
-        Python
-        <p>Used for software development, automation, data analysis, and web development.</p>
+                font-size:25px;
+                color: #CCCCCC;">
+        <img src="python.png" alt="" style="height: 70px;width: 70px;"><br>
+        PYTHON
       </div>
-
     </div>
-  </section>
-
-  <section id="Projects" class="Pro">
-    <h2 style="color: #C792EA;font-size: 50px;"> My Projects</h2>
-    <div style="padding:30px; width: 400px; text-align:center;
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:60px;">
+      <div style="padding:30px; width: 250px; text-align:center;
                 background: rgba(255,255,255,0.05);
                 backdrop-filter: blur(10px);
                 border: 1px solid rgba(0,229,255,0.3);
                 border-radius: 10px;
                 color:#00E5FF;
-                font-size:25px;margin-left: 460px;">
-      Portfolio Page
-      <p>Built a personal portfolio website to present my skills, projects, and background. Implemented a modern UI with
-        dark theme, fixed navigation bar, smooth scrolling, and responsive sections using HTML and CSS.</p>
+                font-size:25px;
+                color: #CCCCCC;">
+        <img src="java.png" alt="" style="height: 70px;width: 70px;"><br>
+        Java(Oop basics)
+      </div>
+
+      <div style="padding:30px; width: 250px; text-align:center;
+                background: rgba(255,255,255,0.05);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(0,229,255,0.3);
+                border-radius: 10px;
+                color:#00E5FF;
+                font-size:25px;
+                color: #CCCCCC;">
+        <img src="vs.png" alt="" style="height: 60px;width: 55px;"><br>
+        VS Code
+      </div>
+
+      <div style="padding:30px; width: 250px; text-align:center;
+                background: rgba(255,255,255,0.05);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(0,229,255,0.3);
+                border-radius: 10px;
+                color:#00E5FF;
+                font-size:25px;
+                color:#CCCCCC;">
+        <img src="git.png" alt="" style="height: 70px;width: 70px;"><br>
+        GitHub
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="projects" class="Pro">
+    <h2 style="color: #C792EA;font-size: 50px;"> My Projects</h2>
+    <div style="display:flex; gap:20px; margin-top:60px;">
+      <div style="padding:50px; width: 250px; text-align:center;
+                background: rgba(255,255,255,0.05);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(0,229,255,0.3);
+                border-radius: 10px;
+                color:#00E5FF;
+                font-size:25px;margin-left: 220px;
+                margin-top: 120px;">
+        Portfolio Page
+        <p style="color: #CCCCCC;">Built a personal portfolio website to present my skills, projects, and background.
+        </p>
+        <a href="https://aju2007342.github.io/portfolio/" style="color: #CCCCCC;text-decoration: none;"
+          target="_blank">Portfolio 🚀</a>
+      </div>
+      <div style="padding:50px; width: 250px; text-align:center;
+                background: rgba(255,255,255,0.05);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(0,229,255,0.3);
+                border-radius: 10px;
+                color:#00E5FF;
+                font-size:25px;margin-left: 200px;
+                margin-top: 120px;">
+        Under Construction
+        <p style="color: #CCCCCC;">Trying to build some more creative and interavtive projects.</p>
+      </div>
     </div>
   </section>
 
 
-  <section id="Contact" class="Con">
+  <section id="contact" class="Con">
 
     <div style="
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(12px);
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     width: 350px;
     margin: auto;
 ">
       <h2 style="color: #C792EA;font-size: 50px;">Contact Me</h2>
-      <form style="margin-top:40px;">
+      <form style="margin-top:30px;">
 
         <input type="text" placeholder="Your Name" required
           style="width:300px; padding:12px; margin:10px; border-radius:5px; border:none;">
