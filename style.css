@@ -126,11 +126,19 @@ h1 {
 
 .scroll-arrow {
     position: absolute;
-    left: 720px;
-    bottom: 60px;
-    font-size: 80px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
     color: #00E5FF;
     text-decoration: none;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, 10px); }
+    100% { transform: translate(-50%, 0); }
 }
 
 section {
@@ -162,4 +170,67 @@ section {
     text-align: center;
     background-image: url(pbg7.jpg);
     background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 80px 10%;
+    }
+
+    .name1,
+    .name2 {
+        font-size: 40px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+}
+
+input,
+textarea {
+    width: 300px;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 229, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+::placeholder {
+    color: #00E5FF;
+    opacity: 0.8;
+}
+
+button {
+    padding: 12px 30px;
+    background: #00E5FF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.opts a:hover {
+    color: #C792EA;
+    transition: 0.3s;
 }
