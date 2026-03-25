@@ -136,9 +136,17 @@ h1 {
 }
 
 @keyframes bounce {
-    0% { transform: translate(-50%, 0); }
-    50% { transform: translate(-50%, 10px); }
-    100% { transform: translate(-50%, 0); }
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 10px);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
 
 section {
@@ -177,40 +185,10 @@ img {
     height: auto;
 }
 
-@media (max-width: 768px) {
-
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .skills-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section {
-        padding: 80px 10%;
-    }
-
-    .name1,
-    .name2 {
-        font-size: 40px;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
-}
-
+/* Base styles for form elements */
 input,
 textarea {
-    width: 300px;
     padding: 12px;
-    margin: 10px;
     border-radius: 5px;
     border: 1px solid rgba(0, 229, 255, 0.5);
     background: rgba(255, 255, 255, 0.05);
@@ -230,7 +208,236 @@ button {
     border-radius: 5px;
     font-size: 16px;
 }
+
 .opts a:hover {
     color: #C792EA;
     transition: 0.3s;
+}
+
+/* --- Responsive Structure Classes --- */
+
+/* Hero */
+.hero-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-btn {
+    padding: 12px 25px;
+    background: transparent;
+    border: 2px solid #00E5FF;
+    color: #00E5FF;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #00E5FF;
+    color: black;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0 0 20px #C792EA;
+    margin: 0 auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    width: 220px;
+    border-radius: 120px;
+    box-shadow: 0 0 20px #00E5FF;
+}
+
+.about-text {
+    color: #CCCCCC;
+    font-size: 20px;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Tools */
+.tools-container {
+    padding: 30px;
+    max-width: 1000px;
+    width: 90%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 10px;
+    margin: 0 auto;
+    color: #00E5FF;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.skill-card {
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 10px;
+    color: #CCCCCC;
+    font-size: 25px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 229, 255, 0.3);
+}
+
+/* Projects */
+.projects-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.project-card {
+    padding: 50px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 10px;
+    color: #00E5FF;
+    font-size: 25px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 229, 255, 0.3);
+}
+
+/* Contact */
+.contact-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.contact-input {
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.message-box {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-btn {
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #00B3CC;
+}
+
+/* --- Media Queries --- */
+
+@media (max-width: 1024px) {
+    section {
+        padding: 80px 5%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        height: auto;
+    }
+
+    .left-name {
+        position: static;
+        margin-bottom: 5px;
+    }
+
+    .opts {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .opts a {
+        margin-left: 0;
+    }
+
+    body {
+        padding-top: 100px;
+        /* account for taller nav */
+    }
+
+    .hero-content {
+        margin-top: 50px;
+    }
+
+    .name1,
+    .name2 {
+        font-size: 60px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        border-radius: 20px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    section {
+        padding: 40px 5%;
+        height: auto;
+    }
 }
