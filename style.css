@@ -33,7 +33,7 @@ body {
 
     background:
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("pbg6.jpg");
+        url("ajbg.jpj.jpg");
 
     background-size: cover;
     background-position: center;
@@ -157,26 +157,26 @@ section {
 
 .Abt {
     text-align: center;
-    background-image: url(pbg7.jpg);
+    background-image: url(ajbg.jpj.jpg);
     background-size: cover;
 
 }
 
 .Skl {
     text-align: center;
-    background-image: url(pbg7.jpg);
+    background-image: url(ajbg.jpj.jpg);
     background-size: cover;
 }
 
 .Pro {
     text-align: center;
-    background-image: url(pbg7.jpg);
+    background-image: url(ajbg.jpj.jpg);
     background-size: cover;
 }
 
 .Con {
     text-align: center;
-    background-image: url(pbg7.jpg);
+    background-image: url(ajbg.jpj.jpg);
     background-size: cover;
 }
 
